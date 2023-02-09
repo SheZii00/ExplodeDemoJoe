@@ -48,10 +48,6 @@ public class CameraOrbit : MonoBehaviour
 
             if (pos.x < 380 * dpiScale && Screen.height - pos.y < 250 * dpiScale) return;
 
-            // comment out these two lines if you don't want to hide mouse curser or you have a UI button 
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-
             x += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
             y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
 
