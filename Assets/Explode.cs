@@ -25,9 +25,6 @@ public class Explode : MonoBehaviour
             else
                 isLastFocused = !isLastFocused;
         }
-
-        if (Input.GetKeyDown(KeyCode.Return))
-            StartCoroutine(StartExplodeGOs());
     }
 
     public void StartExplode()
