@@ -20,10 +20,8 @@ public class Explode : MonoBehaviour
             //if (Vector3.Distance(Camera.main.transform.position, LastCameraPosition.position) > 0.05f)
             //    Camera.main.transform.position = Vector3.Lerp(Camera.main.transform.position, LastCameraPosition.position, Time.deltaTime * 0.75f);
 
-            if (cameraOrbit.distance > 6.5f)
-                cameraOrbit.distance = Mathf.Lerp(cameraOrbit.distance, 6.5f, Time.deltaTime * 1.5f);
-            else
-                isLastFocused = !isLastFocused;
+            if (cameraOrbit.distance > 3.5f)
+                cameraOrbit.distance = Mathf.Lerp(cameraOrbit.distance, 3.5f, Time.deltaTime * 1.5f);
         }
     }
 
